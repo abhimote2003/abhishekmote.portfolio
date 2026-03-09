@@ -1,0 +1,25 @@
+name: Portfolio CI Pipeline
+
+on:
+  push:
+    branches: [ "github-actions-pipeline" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Show Files
+        run: ls
+
+      - name: Build Project
+        run: echo "Building portfolio website"
+
+      - name: Test Project
+        run: echo "Testing portfolio website"
+
+      - name: Deploy
+        run: echo "Deployment complete"
