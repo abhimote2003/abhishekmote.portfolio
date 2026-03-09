@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Code') {
             steps {
-                git 'https://github.com/abhimote2003/abhishekmote.portfolio'
+              git branch: 'main', url: 'https://github.com/abhimote2003/abhishekmote.portfolio.git'
             }
         }
 
